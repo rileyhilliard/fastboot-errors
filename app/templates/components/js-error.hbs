@@ -1,0 +1,2 @@
+<p>This is rendered from the JsError component. You will notice this content is not rendered from fastboot when it encounters an error, but fastboot will still return a 200 status and return a partially rendered page. The expectation here is if fastboot encounters a fatal error, one which would result in serving mangled HTML, the fastboot.visit() call should return a non-200 and allow for the application to redirect to an error substate.</p>
+{{yield}}
